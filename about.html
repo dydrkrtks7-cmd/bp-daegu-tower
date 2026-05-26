@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-mono-chrome">
+    <title>Daegu Tower 정보 | 대구 정보</title>
+    <meta name="description" content="대구 타워 (팔공산) 에 대한 가식 없는 정보를 제공합니다. 위치, 운영 시간, 그리고 왜 가야 하는지에 대한 날것의 팩트.">
+    <meta name="keywords" content="Daegu tower, 대구 타워, 팔공산, 대구 여행, 대구 정보, 대구 가볼만한곳">
+    <link rel="canonical" href="https://example.com">
+    <meta property="og:title" content="Daegu Tower 정보 | 대구 정보">
+    <meta property="og:description" content="대구 타워 (팔공산) 에 대한 가식 없는 정보를 제공합니다. 위치, 운영 시간, 그리고 왜 가야 하는지에 대한 날것의 팩트.">
+    <meta property="og:image" content="https://example.com/image.jpg">
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #1a1a1a;
+            --accent-color: #000000;
+            --gray-light: #f4f4f4;
+            --gray-dark: #888888;
+            --border-color: #e5e5e5;
+            --font-main: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            --font-mono: 'Courier New', Courier, monospace;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: var(--font-main);
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            letter-spacing: -0.02em;
+        }
+
+        header {
+            padding: 20px 40px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(5px);
+            z-index: 1000;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: opacity 0.3s;
+        }
+
+        nav a:hover { opacity: 0.6; }
+
+        .hamburger-menu { display: none; cursor: pointer; }
+        .hamburger-bar { width: 20px; height: 2px; background: var(--text-color); margin: 4px 0; }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        section { margin-bottom: 80px; }
+
+        .hero {
+            text-align: center;
+            padding: 80px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .hero p {
+            font-family: var(--font-mono);
+            font-size: 1.1rem;
+            color: var(--gray-dark);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .review-card {
+            border: 1px solid var(--border-color);
+            padding: 40px;
+            background: var(--bg-color);
+            transition: transform 0.3s;
+        }
+
+        .review-card:hover {
+            border-color: var(--accent-color);
+            transform: translateY(-5px);
+        }
+
+        .review-card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .review-card p {
+            font-size: 1rem;
+            color: var(--text-color);
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .data-block {
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+            border-top: 2px solid var(--accent-color);
+            padding-top: 15px;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: var(--accent-color);
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        footer p {
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            header { padding: 20px; }
+            .hamburger-menu { display: block; }
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background: #fff;
+                padding: 20px;
+                border-bottom: 1px solid var(--border-color);
+            }
+            nav ul.active { display: flex; }
+            .hero { padding: 40px 0; }
+            .review-card { padding: 25px; }
+        }
+    </style>
+    <script>
+        document.querySelector('.hamburger-menu').addEventListener('click', () => {
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+    </script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">DAEGU INFO</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-bar"></div>
+            <div class="hamburger-bar"></div>
+            <div class="hamburger-bar"></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Tower</a></li>
+                <li><a href="#">Map</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+
+<!-- SEO Visual 1: Daegu tower 안내 Editorial Apple Hero -->
+<div class="seo-visual-hero" role="img" aria-label="신뢰할 수 있는 서비스 — Daegu Daegu tower 안내" 
+     style="width:100%;padding:64px 24px;background:#faf9f6;border-bottom:1px solid #e5e5e0;text-align:left;margin:32px 0">
+  <div style="max-width:800px;margin:0 auto">
+    <div style="font-family:serif;font-size:0.9rem;text-transform:uppercase;letter-spacing:0.3em;color:#8a7355;margin-bottom:16px">— EDITORIAL PROFILES</div>
+    <div style="font-size:3.5em;line-height:1.1;font-weight:400;font-family:serif;color:#1c1c1e;letter-spacing:-0.03em;margin-bottom:16px">Daegu tower 안내</div>
+    <p style="font-size:1.05rem;line-height:1.6;color:#1c1c1e;opacity:0.85;max-width:600px">Daegu를 중심으로 신뢰할 수 있는 서비스에 관한 독립적이고 깊이 있는 정보를 제공합니다.</p>
+  </div>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ImageObject","name":"Daegu tower 안내","description":"신뢰할 수 있는 서비스","contentUrl":"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22/>"}</script>
+</div>
+            <h1>Daegu Tower<br>Brutal Truth</h1>
+            <p>팔공산 케이블카 타고 올라간 그곳, 대구 타워. 낭만? 그건 네가 만들어. 여긴 그냥 압도적인 높이와 차가운 바람, 그리고 대구 전역을 굽어보는 단 하나의 시선만 있을 뿐이야.</p>
+        </section>
+
+<!-- SEO Visual 2: 정보 Cardless Editorial List -->
+<div class="seo-visual-cards" role="img" aria-label="Daegu tower 안내 정보 — 신뢰할 수 있는 서비스" 
+     style="display:flex;flex-direction:column;gap:0;margin:40px 0;border-top:1px solid #e5e5e0;border-bottom:1px solid #e5e5e0;background:#faf9f6">
+  <div style="display:flex;align-items:center;justify-content:space-between;padding:24px 16px;border-bottom:1px solid #e5e5e0;background:transparent">
+    <div style="display:flex;align-items:center;gap:24px">
+      <span style="font-family:monospace;font-size:1rem;color:#8a7355;letter-spacing:0.05em;font-weight:500">[ 01 ]</span>
+      <span style="font-family:serif;font-weight:400;font-size:1.2rem;color:#1c1c1e;letter-spacing:-0.02em">특화</span>
+    </div>
+    <span style="font-family:sans-serif;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#8a7355;font-weight:600">Daegu tower 안내</span>
+  </div><div style="display:flex;align-items:center;justify-content:space-between;padding:24px 16px;border-bottom:1px solid #e5e5e0;background:transparent">
+    <div style="display:flex;align-items:center;gap:24px">
+      <span style="font-family:monospace;font-size:1rem;color:#8a7355;letter-spacing:0.05em;font-weight:500">[ 02 ]</span>
+      <span style="font-family:serif;font-weight:400;font-size:1.2rem;color:#1c1c1e;letter-spacing:-0.02em">다수 실적</span>
+    </div>
+    <span style="font-family:sans-serif;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#8a7355;font-weight:600">Daegu tower 안내</span>
+  </div><div style="display:flex;align-items:center;justify-content:space-between;padding:24px 16px;border-bottom:none;background:transparent">
+    <div style="display:flex;align-items:center;gap:24px">
+      <span style="font-family:monospace;font-size:1rem;color:#8a7355;letter-spacing:0.05em;font-weight:500">[ 03 ]</span>
+      <span style="font-family:serif;font-weight:400;font-size:1.2rem;color:#1c1c1e;letter-spacing:-0.02em">고품질</span>
+    </div>
+    <span style="font-family:sans-serif;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#8a7355;font-weight:600">Daegu tower 안내</span>
+  </div>
+</div>
+
+        <section class="info-grid">
+            <article class="review-card">
+                <h2>01. 압도적인 고독 (The View)</h2>
+                <p>해발 550m. 이 높이에서 바라보는 대구는 네가 알던 그 소란스러운 도시가 아니다. 모든 소음은 바람에 쓸려가고, 남는 건 차가운 콘크리트와 자연의 대비뿐. 103m 높이의 타워 위에서 숨겨진 대구의 거친 본질을 마주해라. 감상은 사치다. 그냥 봐.</p>
+                <div class="data-block">
+                    OBSERVATION DECK: 103m<br>
+                    ALTITUDE: 550m<br>
+                    VIBE: Cold & Clear
+                </div>
+            </article>
+
+            <article class="review-card">
+                <h2>02. 거친 본능 (Cable Car)</h2>
+                <p>도심에서 30 분, 케이블카는 단순한 이동 수단이 아니다. 중력을 거스르는 1.7km 의 질주. 비스무스산 케이블카는 한국에서 가장 가파른 경사도 중 하나를 자랑해. 심장이 덜덜 떠도 버텨. 약한 자리에선 이 풍경은 사치일 뿐이니까.</p>
+                <div class="data-block">
+                    CABLE CAR: 1,749m<br>
+                    DURATION: 15 mins<br>
+                    STATUS: Operational
+                </div>
+            </article>
+
+            <article class="review-card">
+                <h2>03. 팩트 체크 (The Facts)</h2>
+                <p>감성 배제. 필요한 정보만 가져간다. 운영 시간, 위치, 그리고 피할 수 없는 혼잡도까지. 계획 없이 왔다면 후회할 거야. 이곳은 준비된 자만이 온전히 향유할 수 있는 고립된 공간이니까.</p>
+                <div class="data-block">
+                    TIME: 10:00 - 22:00 (Last 21:30)<br>
+                    LOC: 219-183, Donghwane-ro, Dong-gu<br>
+                    PHONE: +82-53-855-2255
+                </div>
+            </article>
+        </section>
+
+        <section>
+            <h1 style="font-size: 2rem; margin-bottom: 30px;">F.A.Q: 거절 없는 질문</h1>
+            <div style="border-top: 1px solid #000; padding-top: 20px;">
+                <div style="margin-bottom: 30px;">
+                    <h3 style="font-weight: 700; font-size: 1.2rem; margin-bottom: 10px;">Q. 야경이 진짜 좋나요?</h3>
+                    <p style="color: var(--gray-dark);">A. '좋다'는 표현은 식상해. 밤 9 시가 지나면 불빛이 하나둘 꺼지고, 남는 건 칠흑 같은 어둠과 반짝이는 점들뿐. 그 광경을 보고도 심장이 안 뛴다면 넌 죽은 거나 다름없어.</p>
+                </div>
+                <div style="border-top: 1px solid #eee; padding-top: 20px; margin-bottom: 30px;">
+                    <h3 style="font-weight: 700; font-size: 1.2rem; margin-bottom: 10px;">Q. 주차는 편한가요?</h3>
+                    <p style="color: var(--gray-dark);">A. 주말엔 전쟁터야. 차 대고 싶으면 일찍 오거나, 걸음걸이에 자신 있거나. 아니면 대중교통 타든가. 세상은 널 기다려주지 않아.</p>
+                </div>
+                <div style="border-top: 1px solid #eee; padding-top: 20px;">
+                    <h3 style="font-weight: 700; font-size: 1.2rem; margin-bottom: 10px;">Q. 타워 올라가는 값어치가 있나요?</h3>
+                    <p style="color: var(--gray-dark);">A. 돈이 아까우면 안 가도 돼. 근데 네 인생에 단 한 번뿐일 수 있는 그 '순간'을 돈 몇 천 원에 저울질할 거면, 넌 애초에 여길 오지 말았어야지.</p>
+                </div>
+            </div>
+        
+<div class="seo-visual-divider" role="separator" aria-label="Daegu tower 안내 구분선" style="margin:32px 0;text-align:center;color:#e5e5e0;font-size:0.85rem;letter-spacing:0.5em">◆ ◆ ◆</div>
+</section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 DAEGU INFO. ALL RIGHTS RESERVED.</p>
+        <p style="margin-top: 10px; font-size: 0.8rem; font-family: var(--font-mono);">DESIGNED FOR THE BOLD.</p>
+    </footer>
+
+</body>
+</html>
