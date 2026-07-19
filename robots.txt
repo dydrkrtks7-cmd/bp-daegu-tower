@@ -7,10 +7,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-User-agent: Yeti
-Allow: /
-
-User-agent: OAI-SearchBot
-Allow: /
-
-Sitemap: https://daegu-tower.pages.dev/sitemap.xml
+Sitemap: https://daegu-tower-guide.node-link.shop/sitemap.xml

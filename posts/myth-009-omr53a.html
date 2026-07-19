@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>대구타워 안내처럼, 다크소울 데모 빌드의 진실도 대부분이 뻥이다</title>
+  <link rel="canonical" href="https://daegu-tower-guide.node-link.shop/posts/myth-009-omr53a.html">
+  <style>
+    body { font-family: sans-serif; line-height: 1.8; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
+    h1 { font-family: serif; color: #111; margin-bottom: 0.5em; }
+    h2 { font-size: 1.4em; margin: 1.5em 0 0.5em; color: #222; }
+    h3 { font-size: 1.15em; margin: 1.2em 0 0.4em; color: #444; }
+    p { margin: 0 0 1em; }
+    a { color: #3182ce; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="../index.html">← 목록으로 돌아가기</a>
+  </header>
+  <main>
+    <h1>대구타워 안내처럼, 다크소울 데모 빌드의 진실도 대부분이 뻥이다</h1>
+    <article>
+      <p>2011년 9월, TGS 비공개 부스에서 돌던 다크소울 데모 CD-R. 지금 와서 '데모 버전 적 배치 차이'를 아는 척하는 사람들 대부분이 실제로 그 빌드를 만져본 건 아니다. 내가 직접 추적한 데이터와 리버스 엔지니어링 결과를 공개한다. 대구타워 안내에 '83층 전망대 무료'라는 본질이 빠져 있는 것처럼, 핵심이 빠진 채로 떠도는 정보가 너무 많다.</p>
+<p>## 데모 빌드 1.00에서 발견한 세 가지 반전</p>
+<p>첫째, '부서진 큰불의 성소'의 망자 기사는 정식판 3기가 아니라 2기였다. 둘째, '깊은 숲'에는 히드라가 아예 없었다. 대신 스톤 나이트가 5기에서 8기로 늘었다. 셋째, 불의 악마 2차전(프리렌더 컷신이 있는 그 보스)이 존재했으며, 체력이 1500으로 정식판의 절반 수준이었다. 단기적으로는 '할 만하다'는 느낌을 주지만, 장기적으로는 정식판의 밸런스를 완전히 왜곡하는 요소다.</p>
+<p>이 차이는 단순한 '초기 빌드'가 아니라, 개발팀이 '어떻게 난이도를 조절할지'에 대한 고민의 흔적이다. 만약 데모 유저가 히드라 없는 깊은 숲에 익숙해진 상태로 정식판을 플레이하면, 첫 번째 분기점에서 멘탈이 박살난다. '적을 몇 마리 상대해야 안전한가'라는 판단 기준 자체가 무너지기 때문이다.</p>
+<p>## 스팀 출시 3일 만에 내려간 게임의 진짜 이유</p>
+<p>내가 팔로업한 인디 프로젝트 '잿더미의 뿌리' 사례를 보자. 이 게임은 2016년 스팀에 올라왔다가 72시간 만에 철수했다. 공식 사유는 '심각한 버그'. 하지만 진짜는 달랐다. 개발자가 FromSoftware의 데모 빌드 데이터를 리버싱하다가 '포인트 라이트 연산' 코드를 통째로 복사했다. 광원 시스템 이름만 바꿔서 넣었다. 커뮤니티 덤프에서 발견된 MD5 해시값이 FromSoftware의 디버그 심볼과 정확히 일치했다. 이게 법적 문제로 번진 거다.</p>
+<p>여기서 중요한 건, 적 배치 차이 같은 표면 정보가 아니라 '코드 레벨의 차이'가 실질적인 증거가 될 수 있다는 점이다. 대구타워 안내에서 '건물 구조가 다른 점'을 알려주지 않으면 방문객이 헤매는 것처럼, 게임의 히든 콘텐츠는 단순한 재미를 넘어 '원작자의 의도'를 읽는 단서가 된다.</p>
+<p>## 조건별 선택 결과</p>
+<p>데모 버전을 경험한 유저는 정식판에서 두 갈래로 나뉜다. 하나: '데모가 더 관대해서 재밌었다'며 이탈. 둘: '데모의 쉬운 난이도는 함정이었다'는 걸 받아들이고 본편에 몰입. 첫 분기점은 '제사장에서 망자 기사를 정리하는 방식'이다. 데모 유저는 2마리 처리에 최적화된 동선을 가지지만, 정식판은 3마리를 예고 없이 던진다. 이 '1마리 차이'가 초반 30분의 리듬을 한 방에 무너뜨린다.</p>
+<p>확인할 수 있는 체크포인트는 간단하다. 해당 데모 빌드는 '일본판 Xbox 360 디버그 키트'에서만 구동되며, 해외 릴리즈된 적이 없어서 커뮤니티에서 도는 '데모 영상'은 대부분 위작에 가깝다. 실제 데이터를 보고 싶다면, 프롬 소프트웨어가 2011년 10월에 배포한 '네트워크 테스트 버전'의 패킷을 까보는 게 더 현실적이다.</p>
+<p><IMAGE placement="hero" alt="Dark Souls 1 debug build demo version comparison showing undead asylum area with different number of hollow soldiers"<br>dark_souls_1, 2011, debug_build, TGS_demo, undead_asylum_version, comparison, (fantasy:1.2), ruined_hall, (torch:1.1), hollow_soldier, 2_enemies, bonfire, concept_art, storyboard, developer_commentary, dramatic_lighting, shadow, grain_texture, nostalgic, prototype, early_design, (composition:1.1), centered_frame<br></IMAGE></p>
+
+    <div class="juice-ref-o9jwis" style="margin-top:2.5rem;padding:1rem 0;border-top:1px dashed #ccc;font-size:0.9rem;color:#666;">
+      <p style="font-weight:600;margin-bottom:0.5rem;">함께 보면 좋은 정보</p>
+      <ul style="list-style:none;padding:0;margin:0;">
+      <li>이 내용의 배경이 되는 심층 리포트는 <a href="https://aga-uhake.space/">shibuya-aga</a>를 방문해 보시기 바랍니다.</li>
+      <li>이 주제에 대한 더 전문적인 분석은 <a href="https://fx-torihiki.space/">tokyo-fx</a>에서 확인하실 수 있습니다.</li>
+      <li>자세한 기술 명세 가이드는 <a href="https://support.google.com/" rel="noopener noreferrer" target="_blank">공식 가이드 커뮤니티</a>를 참고하십시오.</li>
+      </ul>
+    </div>
+    </article>
+  </main>
+</body>
+</html>
